@@ -1,4 +1,4 @@
-cantidad_numeros = input("Ingrese algun numero entero: ")
+cantidad_numeros = int(input("Ingrese algun numero entero: "))
 if cantidad_numeros <= 0:
         print("Por favor ingrese un numero positivo")
 elif cantidad_numeros == 0: 
