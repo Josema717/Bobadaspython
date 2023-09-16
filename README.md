@@ -1,2 +1,3 @@
 # Bobadaspython
-Los archivos que creo en clase de python, para poder trabajarlos en la casa
+Los archivos que creo en clase de programacion, para poder trabajarlos en la casa. 
+## :)
