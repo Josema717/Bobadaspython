@@ -1,3 +1,5 @@
-cadena = input("Ingrese una frase:")
-cantidad = len(cadena)
-print("La longitud de la cadena es: ",  cantidad)
+cadena = input("Ingrese una frase:")  
+contador = 0 
+for caracter in cadena:
+    contador += 1
+print("La longitud de la cadena es: ",  contador)
