@@ -5,18 +5,23 @@ def menu():
     opcion = input("Ingrese una opcion:")
     return opcion.lower()
 x = randint(0,100)
-intentos = 10
+intentos = 10  
+op = menu()
 while intentos > 0 and op != "s":
-    op = menu()
     if op == "a":
-        n = input("Adivina el numero>>")
+        n = int(input("Adivina el numero>>"))
         if x == n:
-            print("Buena, adivinaste")
+            print(f"Buena, adivinaste, solo te tomó {intentos} intentos")
+        elif n > 100:
+            print(f"Mano el numero es maximo hasta 100, te quedan {intentos -1} intentos")
         else:
-            print(f"Cule bobo, te quedan {intentos} intentos")
+            print(f"Cule bobo, te quedan {intentos -1} intentos")
         intentos -= 1
     elif op == "p":
         if x > n:
             print("Oe, el numero es mayor")
-
+if intentos == 0: 
+    print(f"Mejor suerte la proxima, el numero era {x}")
+elif intentos == 5: 
+    
 ##Arregla esta mkada cuando llegues a la casa
