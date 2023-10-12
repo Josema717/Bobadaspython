@@ -11,9 +11,9 @@ def calculo_factorial(n):
     if n == 0 or n == 1:
         return 1
     else: 
-        #n_factorial = factorial(n)
-        n_factorial = n*n-contador
-        contador -= 1
+        n_factorial = factorial(n)
+        #n_factorial = n*n-contador
+        #contador -= 1
     return n_factorial 
 
 
