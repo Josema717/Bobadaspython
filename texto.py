@@ -49,11 +49,11 @@ for i in range(50):
 nombre_archivo = input("Ingrese el nombre del archivo")
 nombre_archivo += ".txt"
 
-with open("nombre_archivo", "w") as archivo:
+with open(nombre_archivo, "w") as archivo:
     datos = input("Ingrese los datos que desea escribir en el archivo")
     archivo.write(datos)
 
-with open("nombre_archivo", "r") as archivo:
+with open(nombre_archivo, "r") as archivo:
     contenido = archivo.read()
     print("Contenido del archivo")
     print(contenido) 
