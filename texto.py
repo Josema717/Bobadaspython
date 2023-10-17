@@ -2,8 +2,8 @@ from random import randint ##Importado para el ejercicio 3
 
 ###Ejercicio 1
 
-fp = open("texto.txt", "r")
-datos = fp.read(10)
+fp = open("texto.txt", "r")     ##Abierto en modo solo lectura
+datos = fp.read(10)             
 print(datos)
 datos= fp.read(8)
 print(datos)
