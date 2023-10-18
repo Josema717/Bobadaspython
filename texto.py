@@ -2,8 +2,8 @@ from random import randint ##Importado para el ejercicio 3
 
 ###Ejercicio 1
 
-fp = open("texto.txt", "r")
-datos = fp.read(10)
+fp = open("texto.txt", "r")     ##Abierto en modo solo lectura
+datos = fp.read(10)             
 print(datos)
 datos= fp.read(8)
 print(datos)
@@ -49,11 +49,11 @@ for i in range(50):
 nombre_archivo = input("Ingrese el nombre del archivo")
 nombre_archivo += ".txt"
 
-with open("nombre_archivo", "w") as archivo:
+with open(nombre_archivo, "w") as archivo:
     datos = input("Ingrese los datos que desea escribir en el archivo")
     archivo.write(datos)
 
-with open("nombre_archivo", "r") as archivo:
+with open(nombre_archivo, "r") as archivo:
     contenido = archivo.read()
     print("Contenido del archivo")
     print(contenido) 
