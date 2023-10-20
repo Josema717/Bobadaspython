@@ -1,0 +1,9 @@
+Datos del usuario
+
+Nombre: 
+Edad:
+Carrera:
+Estatura: JoseJose17Aeronautica1.76Jose17Aeronautica1.76Jose
+17
+Aeronautica
+1.76
