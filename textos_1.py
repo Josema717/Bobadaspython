@@ -47,7 +47,11 @@ nombre_archivo = "pruebamatriz.txt"
 with open(nombre_archivo, "w") as archivo:
     for filas in matriz:
         for j in filas:
-            j = str(j) + "," 
-            archivo.write(j)
+            if j != filas[3]:
+                j = str(j) + "," 
+                archivo.write(j)
+            else:
+                j = str(j)
+                archivo.write(j)
         archivo.write("\n")
 print(matriz)
