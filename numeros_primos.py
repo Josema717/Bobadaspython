@@ -72,10 +72,13 @@ def main():
         print("Ese numero no es primo")
     else:
         print("Ese numero si es primo, que pro")
+    
+    
     print("Ahora veremos los numeros primos entre un rango")
     num1 = int(input("Regalame un numero>> "))
     num2 = int(input("Regalame otro numero>> "))
     lista_primos = primos_rango(num1, num2)
+    
     if primos_rango(num1,num2) == ValueError:
         print("Los numeros no pueden ser iguales")
     print(f"Los numeros primos en ese rango son: {lista_primos}") 
