@@ -19,10 +19,9 @@ def cambiar(palabra_vieja, palabra_nueva):
         contenido = texto.split()
     with open('Practicas/frases.txt', 'w') as archivo_editable:
         for i in range(len(contenido)):
-            if contenido[i] == palabra_vieja:
+            if palabra_vieja in contenido[i]:
                 contenido[i] == palabra_nueva  
-        nuevo_contenido = ' '.join(contenido)
-        archivo_editable.write(nuevo_contenido)
+        archivo_editable.write('\n'.join(contenido))
 ### El programa no encuentra la "palabra_vieja"
 
 def main():
@@ -36,18 +35,18 @@ def main():
         print("Este es el texto que vamos a usar:")
         for i in lineas:
             print(i)
-        op = print("1. Contar cuantas lineas tiene el archivo\n2. Encontrar la palabra más larga del archivo\n3. Reemplazar una palabra por otra en el archivo\n4. Salir del programa")
-        op = int(input("Que deseas hacer con el? "))
-        if op == 1:
-            n_lineas = contar(lineas)
-            print(f"El archivo contiene {n_lineas} frases")
-        elif op == 2:
-            palabra = l_word(texto)
-            print(f"La palabra más larga es {palabra[0]} y tiene {palabra[1]} caracteres")
+            print("1. Contar cuantas lineas tiene el archivo\n2. Encontrar la palabra más larga del archivo\n3. Reemplazar una palabra por otra en el archivo\n4. Salir del programa")
+            op = int(input("Que deseas hacer con el? "))
+            if op == 1:
+                n_lineas = contar(lineas)
+                print(f"El archivo contiene {n_lineas} frases")
+            elif op == 2:
+                palabra = l_word(texto)
+                print(f"La palabra más larga es {palabra[0]} y tiene {palabra[1]} caracteres")
 
-        elif op == 3:
-            palabra_vieja = input("Que palabra deseas reemplazar?  ")
-            palabra_nueva = input("Dime la palabra que va a ocupar su lugar   ")
-            resultado = cambiar(palabra_vieja, palabra_nueva)
-            print(resultado)
+            elif op == 3:
+                palabra_vieja = input("Que palabra deseas reemplazar?  ")
+                palabra_nueva = input("Dime la palabra que va a ocupar su lugar   ")
+                resultado = cambiar(palabra_vieja, palabra_nueva)
+                print(resultado)
 main() 
