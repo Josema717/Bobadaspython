@@ -1,0 +1,6 @@
+archivo = open('Ejercicios_textos\cositas.txt', 'r')
+#read = archivo.read()
+read = archivo.readlines()
+tipo = type(read)
+print(read)
+print(tipo)
