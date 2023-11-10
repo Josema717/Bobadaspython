@@ -22,7 +22,7 @@ edad = str(input("Regalame tu edad: "))
 carrera = str(input("¿Que estas estudiando?  "))
 estatura = str(input("¿Cuanto mides?  "))
 
-datos.readline()
+
 datos.write(nombre)
 datos.write("\n")
 datos.write(edad)
